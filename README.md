@@ -62,39 +62,29 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | Chiropter | Gallery 2: folding drive | `images/chiropter/gallery-2.jpg` | 4:3 |
 | Chiropter | Gallery 3: chassis | `images/chiropter/gallery-3.jpg` | 4:3 |
 | Chiropter | Gallery 4: carbon fiber and nylon parts | `images/chiropter/gallery-4.jpg` | 4:3 |
-| Home + Kayak Paddle | Hero / card | `images/kayak-paddle/hero.jpg` | 16:9 |
-| Kayak Paddle | Gallery 1: blade and filter media | `images/kayak-paddle/gallery-1.jpg` | 4:3 |
-| Kayak Paddle | Gallery 2: 3D printed test articles | `images/kayak-paddle/gallery-2.jpg` | 4:3 |
-| Kayak Paddle | Gallery 3: on-water testing | `images/kayak-paddle/gallery-3.jpg` | 4:3 |
-| Kayak Paddle | Gallery 4: flow path detail or CAD | `images/kayak-paddle/gallery-4.jpg` | 4:3 |
-| Home + Glider | Hero / card | `images/glider/hero.jpg` | 16:9 |
-| Glider | Gallery 1: Fusion 360 model | `images/glider/gallery-1.jpg` | 4:3 |
-| Glider | Gallery 2: Ansys analysis | `images/glider/gallery-2.jpg` | 4:3 |
-| Glider | Gallery 3: construction | `images/glider/gallery-3.jpg` | 4:3 |
-| Glider | Gallery 4: flight test | `images/glider/gallery-4.jpg` | 4:3 |
-| Home + DockBloxx | Hero / card | `images/dockbloxx/hero.jpg` | 16:9 |
-| DockBloxx | Gallery 1: accessory catalog renders | `images/dockbloxx/gallery-1.jpg` | 4:3 |
-| DockBloxx | Gallery 2: assembly animation still | `images/dockbloxx/gallery-2.jpg` | 4:3 |
-| DockBloxx | Gallery 3: new modular product CAD | `images/dockbloxx/gallery-3.jpg` | 4:3 |
-| DockBloxx | Gallery 4: finalized prototype | `images/dockbloxx/gallery-4.jpg` | 4:3 |
 | Home + EasySDS | Hero / card | `images/easysds/hero.jpg` | 16:9 |
 | EasySDS | Gallery 1: generated label | `images/easysds/gallery-1.jpg` | 4:3 |
 | EasySDS | Gallery 2: approval queue | `images/easysds/gallery-2.jpg` | 4:3 |
 | EasySDS | Gallery 3: admin inventory | `images/easysds/gallery-3.jpg` | 4:3 |
 | EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
 
-That is 26 images total (1 headshot + 5 heroes + 20 gallery).
+That is 11 images total (1 headshot + 2 heroes + 8 gallery).
 
 ### Other files and text
 
 - **Resume:** `resume/Sam_Heller_Resume.pdf` (the nav link and the Download Resume button point here).
 - **About bio** in `index.html`: marked `<!-- DRAFT: Sam to edit -->`.
 - **Bracketed notes** like `[Add: test results]` on the project pages. They show highlighted in orange so they are easy to spot. Search the HTML for `[Add:` to find them all, then delete the `<span class="todo">...</span>` wrapper along with the text once filled in.
-- **Footer year** is hard-coded as 2026 on every page. Update it in all six HTML files when it changes.
+- **Footer year** is hard-coded as 2026 on every page. Update it in all three HTML files when it changes.
 
-### DockBloxx: public work only
+### Parked projects (Kayak Paddle, Glider, DockBloxx)
 
-Only put **publicly released** DockBloxx work on `projects/dockbloxx.html`: products and renders/animations that already appear on the DockBloxx website. Nothing unreleased, internal, or under NDA.
+These pages are drafted but not published. They live outside the repo in `C:\Users\atlan\portfolio-parked\`, each with its placeholders and `[Add: ...]` notes. To bring one back:
+
+1. Move `portfolio-parked/projects/<name>.html` into `projects/`, and `portfolio-parked/images/<name>/` into `images/`.
+2. Add its card back to the `#projects` grid in `index.html` (see "Adding a new project" below). The original card text: Kayak Paddle, "A paddle that passively filters microplastics during a normal stroke, taken from concept to functional prototype."; Glider, "A flying wing designed in Fusion 360, Wing Helper, and Ansys, built from balsa and carbon fiber, and flight tested."; DockBloxx, "Modeled and animated a catalog of 20+ dock accessories and designed a new modular product from concept to prototype."
+
+**DockBloxx: public work only.** Only put publicly released DockBloxx work on its page: products and renders/animations that already appear on the DockBloxx website. Nothing unreleased, internal, or under NDA.
 
 ### EasySDS screenshots
 
@@ -102,7 +92,7 @@ Before adding EasySDS screenshots, make sure they don't show any internal facili
 
 ## Adding a new project
 
-1. **Copy a project page.** Duplicate an existing page in `projects/` (e.g. `projects/glider.html`) and rename it, e.g. `projects/new-project.html`. Use lowercase with hyphens.
+1. **Copy a project page.** Duplicate an existing page in `projects/` (e.g. `projects/chiropter.html`) and rename it, e.g. `projects/new-project.html`. Use lowercase with hyphens.
 2. **Edit the new page:**
    - `<title>`, `<meta name="description">`, and the `og:title`, `og:description`, `og:image`, and `og:url` tags in the `<head>`.
    - The `<h1>`, the `.lede` one-liner, and the facts row (`Role`, `Timeframe`, `Where`, `Tools`).
