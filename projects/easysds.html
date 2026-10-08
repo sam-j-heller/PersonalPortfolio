@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EasySDS: Chemical Label Generator | Sam Heller</title>
+  <meta name="description" content="EasySDS is a Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels, started during Sam Heller's Summer 2026 internship at Rhenus Automotive.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="EasySDS: Chemical Label Generator | Sam Heller">
+  <meta property="og:description" content="Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels.">
+  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/easysds/hero.jpg">
+  <meta property="og:url" content="https://sam-j-heller.github.io/PersonalPortfolio/projects/easysds.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html">Sam Heller</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../resume/Sam_Heller_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="container project-head">
+        <a class="back-link" href="../index.html#projects">&larr; All projects</a>
+        <h1>EasySDS</h1>
+        <p class="lede">A Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Architect and developer</dd></div>
+          <div><dt>Timeframe</dt><dd>May 2026 to present</dd></div>
+          <div><dt>Where</dt><dd>Started at Rhenus Automotive, Salem, VA</dd></div>
+          <div><dt>Tools</dt><dd>Firebase, Firestore, Claude Code</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://github.com/sam-j-heller/SDSLabelGenerator" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </header>
+
+      <div class="container project-hero">
+        <!-- REPLACE WITH: <img class="ratio-16x9" src="../images/easysds/hero.jpg" alt="EasySDS chemical label generator interface" width="1920" height="1080"> -->
+        <div class="ph ratio-16x9" role="img" aria-label="Placeholder for EasySDS hero image">
+          <span>EasySDS: hero image, 16:9</span>
+          <code>images/easysds/hero.jpg</code>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="prose">
+          <section aria-labelledby="overview">
+            <h2 id="overview">Overview</h2>
+            <p>EasySDS started during my Summer 2026 Mechanical Engineering internship at Rhenus Automotive in Salem, VA, as an automated chemical labeling compliance tool that enforces required GHS/OSHA fields. It cut per-label cost to under $1 and processing time by 90%.</p>
+            <p>It is now a Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels, with facility-gated login, an approval queue, and multiple print formats.</p>
+          </section>
+
+          <section aria-labelledby="role">
+            <h2 id="role">My Role</h2>
+            <p>I architected the Firestore data model and admin tooling for per-facility chemical inventories. I implemented it with Claude Code and reviewed the generated code against GHS field requirements.</p>
+          </section>
+
+          <section aria-labelledby="details">
+            <h2 id="details">Key Details</h2>
+            <ul>
+              <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields.</li>
+              <li><strong>Access and workflow:</strong> facility-gated login, an approval queue, and multiple print formats.</li>
+              <li><strong>Data model:</strong> Firestore with admin tooling for per-facility chemical inventories.</li>
+              <li><strong>Print validation:</strong> output validated on BS 5609 certified vinyl label stock with a color laser print workflow, documented as a standard work instruction.</li>
+              <li><strong>Impact:</strong> per-label cost under $1 and a 90% reduction in processing time.</li>
+            </ul>
+          </section>
+        </div>
+
+        <h2 class="visually-hidden">Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-1.jpg" alt="Example GHS compliant chemical label generated by EasySDS" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS gallery image 1">
+              <span>EasySDS: gallery 1, generated label, 4:3</span>
+              <code>images/easysds/gallery-1.jpg</code>
+            </div>
+            <figcaption>Generated label. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-2.jpg" alt="EasySDS approval queue screen" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS gallery image 2">
+              <span>EasySDS: gallery 2, approval queue, 4:3</span>
+              <code>images/easysds/gallery-2.jpg</code>
+            </div>
+            <figcaption>Approval queue. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-3.jpg" alt="EasySDS admin view of a facility chemical inventory" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS gallery image 3">
+              <span>EasySDS: gallery 3, admin inventory, 4:3</span>
+              <code>images/easysds/gallery-3.jpg</code>
+            </div>
+            <figcaption>Per-facility inventory admin. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-4.jpg" alt="Printed label on BS 5609 certified vinyl stock" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS gallery image 4">
+              <span>EasySDS: gallery 4, printed label on vinyl stock, 4:3</span>
+              <code>images/easysds/gallery-4.jpg</code>
+            </div>
+            <figcaption>Printed on BS 5609 vinyl stock. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container project-foot">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sam Heller</p>
+    </div>
+  </footer>
+</body>
+</html>
