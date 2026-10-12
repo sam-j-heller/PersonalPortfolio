@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chiropter: Flapping-Wing Drone | Sam Heller</title>
-  <meta name="description" content="Chiropter is a bat-inspired flapping-wing drone with a 54 cm wingspan and an 80 g mass goal. Sam Heller is team lead and owns the wing spar design for this Virginia Tech senior design project.">
+  <meta name="description" content="Chiropter is a bat-inspired flapping-wing drone with a 54 cm wingspan and a target mass under 100 g. Sam Heller is team lead and owns the wing spar design for this Virginia Tech senior design project.">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Chiropter: Flapping-Wing Drone | Sam Heller">
-  <meta property="og:description" content="Bat-inspired flapping-wing drone, 54 cm wingspan, 80 g mass goal. Virginia Tech senior design.">
-  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/chiropter/sh1-open.png">
+  <meta property="og:description" content="Bat-inspired flapping-wing drone, 54 cm wingspan, target mass under 100 g. Virginia Tech senior design.">
+  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/chiropter/hero.jpg">
   <meta property="og:url" content="https://sam-j-heller.github.io/PersonalPortfolio/projects/chiropter.html">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,28 +43,24 @@
       <header class="container project-head">
         <a class="back-link" href="../index.html#projects">&larr; All projects</a>
         <h1>Chiropter</h1>
-        <p class="lede">A bat-inspired flapping-wing drone with a 54 cm wingspan, an 80 g mass goal, and wings that fold in flight.</p>
+        <p class="lede">A bat-inspired flapping-wing drone with a 54 cm wingspan, a target mass under 100 g, and wings that fold in flight.</p>
         <dl class="facts">
           <div><dt>Role</dt><dd>Team lead; CAD approval and weight optimization; wing spars</dd></div>
           <div><dt>Timeframe</dt><dd>2026 to 2027</dd></div>
           <div><dt>Where</dt><dd>Senior Design (ME 4015), Virginia Tech</dd></div>
-          <div><dt>Tools</dt><dd>Carbon fiber, titanium, hand calcs, <span class="todo">[Add: CAD and analysis tools]</span></dd></div>
+          <div><dt>Tools</dt><dd>SolidWorks, carbon fiber, titanium, hand calcs</dd></div>
         </dl>
       </header>
 
       <div class="container project-hero">
-        <!-- REPLACE WITH: <img class="ratio-16x9" src="../images/chiropter/hero.jpg" alt="Chiropter flapping-wing drone prototype" width="1920" height="1080"> -->
-        <div class="ph ratio-16x9" role="img" aria-label="Placeholder for Chiropter hero image">
-          <span>Chiropter: hero image, 16:9</span>
-          <code>images/chiropter/hero.jpg</code>
-        </div>
+        <img class="ratio-16x9" src="../images/chiropter/hero.jpg" alt="SolidWorks render of the Chiropter assembly: a carbon fiber chassis with the flapping drive, electronics, and lead screws, and two folding wings with three carbon fiber digits each" width="1920" height="1080">
       </div>
 
       <div class="container">
         <div class="prose">
           <section aria-labelledby="overview">
             <h2 id="overview">Overview</h2>
-            <p>Chiropter is my Virginia Tech senior design project (Team 504): a bat-inspired flapping-wing drone with a 54 cm wingspan, sized after a medium diadem leaf-nosed bat, and an 80 g mass goal. Our team is building on the prototype from the previous design cycle. Every bat robot with sustained flight so far has had a wingspan over 150 cm, so getting there at a third of that size is the core challenge.</p>
+            <p>Chiropter is my Virginia Tech senior design project (Team 504): a bat-inspired flapping-wing drone with a 54 cm wingspan, sized after a medium diadem leaf-nosed bat, and a target mass under 100 g. Our team is building on the prototype from the previous design cycle. Every bat robot with sustained flight so far has had a wingspan over 150 cm, so getting there at a third of that size is the core challenge.</p>
             <p>The vehicle is split into four subsystems: mechanics (wing folding, wing actuation, tail actuation), materials (spars and membrane), electrical (battery and motor), and controls (electronics and software).</p>
             <p>This cycle's goals:</p>
             <ul>
@@ -77,7 +73,7 @@
 
           <section aria-labelledby="role">
             <h2 id="role">My Role</h2>
-            <p>I'm the team lead and give final approval on all CAD before it moves forward. I also lead weight reduction and optimization across the full model, keeping every subsystem's parts inside the 80 g mass budget.</p>
+            <p>I'm the team lead and give final approval on all CAD before it moves forward. I also lead weight reduction and optimization across the full model, keeping the whole vehicle under its 100 g mass target.</p>
             <p>On top of that, I own the wing spars: the carbon fiber structure that carries the wing loads and gives the membrane its bat shape.</p>
             <p>For concept generation I took the previous cycle's CAD models and bill of materials, scaled the linkage to a 540 mm wingspan, and developed three spar concepts. I sized each one with hand calculations for wing loading, digit deflection, root stress, and stored elastic energy.</p>
           </section>
@@ -87,7 +83,7 @@
             <p>All three concepts share the folding linkage from the previous cycle. A lead screw on each side of the chassis drives a nut fore and aft. The nut carries a carbon fiber spar through the elbow to the wrist. Running the nut backwards bends the elbow, sweeps the hand forward, and fans the three digits closed in one motion, so one actuator per side folds the whole wing.</p>
             <ul>
               <li><strong>SH1, carbon fiber digits:</strong> three 1.0 mm pultruded carbon rods at 4&deg;, 36&deg;, and 78&deg; from the wrist block, weighing 0.45 g per wing. At an estimated peak downstroke pressure of 59 Pa and 8 Hz flapping, each digit deflects 4.1 mm with a flexural safety factor of 17.7. The weakness: carbon rod splinters instead of bending, and the digits are the first parts to hit the ground in a crash.</li>
-              <li><strong>SH2, titanium digits:</strong> the same geometry in 1.0 mm Ti-6Al-4V. Stiffness stays within 5% of carbon, so the wrist blocks and kinematics carry over unchanged. The cost is 1.19 g (1.5% of the mass goal). A titanium digit bends visibly instead of shattering, with a yield safety factor of 7.6, so damage can be caught on the ground.</li>
+              <li><strong>SH2, titanium digits:</strong> the same geometry in 1.0 mm Ti-6Al-4V. Stiffness stays within 5% of carbon, so the wrist blocks and kinematics carry over unchanged. The cost is 1.19 g, about 1.5% of the 80 g design estimate used for the load calculations. A titanium digit bends visibly instead of shattering, with a yield safety factor of 7.6, so damage can be caught on the ground.</li>
               <li><strong>SH3, compliant digit roots:</strong> SH1's carbon digits bonded to 0.18 mm unidirectional carbon strips at the root, sized for 15&deg; of deflection under peak load. The three strips store 2.67 mJ and return it at stroke reversal, about 12% of the wing's peak kinetic energy. This follows the torsional-spring approach shown to cut peak input torque by up to 66%.</li>
             </ul>
           </section>

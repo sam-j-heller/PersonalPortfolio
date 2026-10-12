@@ -335,8 +335,6 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 }
 .card:focus-within { outline: 3px solid var(--maroon); outline-offset: 3px; }
 .card .ph, .card img { border: 0; border-bottom: 1px solid var(--border); }
-/* Diagrams are letterboxed on white instead of cropped. */
-.card img.diagram { object-fit: contain; background: #fff; padding: 0.5rem; }
 
 .card-body { padding: 1.25rem 1.25rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
 .card-body h3 { margin-bottom: 0.4rem; }
@@ -484,6 +482,17 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 .project-head .btn-row { margin-top: 1.75rem; }
 
 .project-hero .ph, .project-hero img { border-radius: var(--radius); }
+
+/* Screenshots keep their own ratio and get a frame so white UI edges do not
+   blend into the page. */
+img.screenshot {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.figure-wide { margin: 0 0 3rem; }
+.figure-wide figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
 .prose { max-width: 72ch; padding: 3rem 0 1rem; }
 .prose section { margin-bottom: 2.5rem; scroll-margin-top: var(--header-h); }

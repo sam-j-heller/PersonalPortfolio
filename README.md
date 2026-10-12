@@ -52,27 +52,22 @@ Gallery and home-page card images already include `loading="lazy"` in their repl
 
 ### Images
 
-Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page and as the 3:2 card image on the home page. It is also the `og:image` for link previews.
+All current images are in place. Each project's hero image is also its 3:2 home-page card image (center-cropped) and its `og:image` for link previews.
 
-| Page | Placeholder | File | Ratio |
-|---|---|---|---|
-| Home | Headshot (About section) | `images/headshot/headshot.jpg` | 4:5 portrait |
-| Home + Chiropter | Hero / card | `images/chiropter/hero.jpg` | 16:9 |
-| Chiropter | Gallery 1: flapping drive | `images/chiropter/gallery-1.jpg` | 4:3 |
-| Chiropter | Gallery 2: folding drive | `images/chiropter/gallery-2.jpg` | 4:3 |
-| Chiropter | Gallery 3: chassis | `images/chiropter/gallery-3.jpg` | 4:3 |
-| Chiropter | Gallery 4: carbon fiber and nylon parts | `images/chiropter/gallery-4.jpg` | 4:3 |
-| Home + EasySDS | Hero / card | `images/easysds/hero.jpg` | 16:9 |
-| EasySDS | Gallery 1: generated label | `images/easysds/gallery-1.jpg` | 4:3 |
-| EasySDS | Gallery 2: approval queue | `images/easysds/gallery-2.jpg` | 4:3 |
-| EasySDS | Gallery 3: admin inventory | `images/easysds/gallery-3.jpg` | 4:3 |
-| EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
+| Page | Image | File |
+|---|---|---|
+| Home | Headshot (About section) | `images/headshot/headshot.jpg` |
+| Home + Chiropter | Hero / card: SolidWorks render | `images/chiropter/hero.jpg` |
+| Chiropter | Gallery: SH1 open, SH1 folded, SH2, SH3 concept diagrams | `images/chiropter/sh*.png` |
+| Home + EasySDS | Hero / card: full label editor | `images/easysds/full-label.png` |
+| EasySDS | Sticker-sheet screenshot | `images/easysds/sticker-sheet.png` |
 
-That is 11 images total (1 headshot + 2 heroes + 8 gallery).
+Diagrams use `class="diagram"` and screenshots use `class="screenshot"`, so they keep their own ratio instead of being cropped. Good next additions for EasySDS: a photo of a printed label on vinyl stock, and admin console or approval queue screenshots made with demo data.
 
 ### Other files and text
 
-- **Resume:** `resume/Sam_Heller_Resume.pdf` (the nav link and the Download Resume button point here).
+- **Resume:** `resume/Sam_Heller_Resume.pdf` (the nav link and the Download Resume button point here). The resume includes Sam's phone number; keep the phone number off the site pages themselves.
+- **Skills section** in `index.html` mirrors the resume's Skills section. Update both together.
 - **About bio** in `index.html`: marked `<!-- DRAFT: Sam to edit -->`.
 - **Bracketed notes** like `[Add: test results]` on the project pages. They show highlighted in orange so they are easy to spot. Search the HTML for `[Add:` to find them all, then delete the `<span class="todo">...</span>` wrapper along with the text once filled in.
 - **Footer year** is hard-coded as 2026 on every page. Update it in all three HTML files when it changes.
