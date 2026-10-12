@@ -48,10 +48,11 @@
           <div><dt>Role</dt><dd>Architect and developer</dd></div>
           <div><dt>Timeframe</dt><dd>May 2026 to present</dd></div>
           <div><dt>Where</dt><dd>Started at Rhenus Automotive, Salem, VA</dd></div>
-          <div><dt>Tools</dt><dd>Firebase, Firestore, Claude Code</dd></div>
+          <div><dt>Tools</dt><dd>JavaScript, HTML/CSS, Firebase Auth, Firestore, GitHub Pages, Claude Code</dd></div>
         </dl>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://github.com/sam-j-heller/SDSLabelGenerator" target="_blank" rel="noopener">View on GitHub</a>
+          <a class="btn btn-secondary" href="https://sam-j-heller.github.io/SDSLabelGenerator/" target="_blank" rel="noopener">Open the App</a>
         </div>
       </header>
 
@@ -74,14 +75,17 @@
           <section aria-labelledby="role">
             <h2 id="role">My Role</h2>
             <p>I architected the Firestore data model and admin tooling for per-facility chemical inventories. I implemented it with Claude Code and reviewed the generated code against GHS field requirements.</p>
+            <p>The app is two pages: a label tool for workers and an admin console for engineering managers. Both run in the browser and are hosted on GitHub Pages, with Firebase handling sign-in and data.</p>
           </section>
 
           <section aria-labelledby="details">
             <h2 id="details">Key Details</h2>
             <ul>
-              <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields.</li>
-              <li><strong>Access and workflow:</strong> facility-gated login, an approval queue, and multiple print formats.</li>
-              <li><strong>Data model:</strong> Firestore with admin tooling for per-facility chemical inventories.</li>
+              <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields: product identifier, signal word, GHS pictograms, hazard and precautionary statements, first aid, and supplier contact. Labels can also carry NFPA 704 and HMIS ratings.</li>
+              <li><strong>Live preview and print formats:</strong> the label updates as you type and prints to 3&times;4 in, 4&times;5 in, Letter, A4, SRA3, and 4-up sheet layouts.</li>
+              <li><strong>Access and workflow:</strong> facility-gated login with worker accounts. New chemicals go into an approval queue, and admins approve or reject them with an optional reason sent to the submitter.</li>
+              <li><strong>Data model:</strong> Firestore with a chemical library per facility, company-wide chemicals, a chemical blacklist checked on entry, and an activity log of every approval, rejection, and change.</li>
+              <li><strong>Admin console:</strong> manage facilities, invite and deactivate workers, bulk-load chemicals and blacklist entries from CSV, transfer chemicals between facilities, and upload facility logos.</li>
               <li><strong>Print validation:</strong> output validated on BS 5609 certified vinyl label stock with a color laser print workflow, documented as a standard work instruction.</li>
               <li><strong>Impact:</strong> per-label cost under $1 and a 90% reduction in processing time.</li>
             </ul>
@@ -96,7 +100,7 @@
               <span>EasySDS: gallery 1, generated label, 4:3</span>
               <code>images/easysds/gallery-1.jpg</code>
             </div>
-            <figcaption>Generated label. <span class="todo">[Add: caption]</span></figcaption>
+            <figcaption>A generated GHS label with pictograms, signal word, and hazard statements.</figcaption>
           </figure>
           <figure>
             <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-2.jpg" alt="EasySDS approval queue screen" loading="lazy" width="1600" height="1200"> -->
@@ -104,7 +108,7 @@
               <span>EasySDS: gallery 2, approval queue, 4:3</span>
               <code>images/easysds/gallery-2.jpg</code>
             </div>
-            <figcaption>Approval queue. <span class="todo">[Add: caption]</span></figcaption>
+            <figcaption>The approval queue, where admins review new chemicals before they reach the library.</figcaption>
           </figure>
           <figure>
             <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-3.jpg" alt="EasySDS admin view of a facility chemical inventory" loading="lazy" width="1600" height="1200"> -->
@@ -112,7 +116,7 @@
               <span>EasySDS: gallery 3, admin inventory, 4:3</span>
               <code>images/easysds/gallery-3.jpg</code>
             </div>
-            <figcaption>Per-facility inventory admin. <span class="todo">[Add: caption]</span></figcaption>
+            <figcaption>The admin console's per-facility chemical inventory.</figcaption>
           </figure>
           <figure>
             <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds/gallery-4.jpg" alt="Printed label on BS 5609 certified vinyl stock" loading="lazy" width="1600" height="1200"> -->
@@ -120,7 +124,7 @@
               <span>EasySDS: gallery 4, printed label on vinyl stock, 4:3</span>
               <code>images/easysds/gallery-4.jpg</code>
             </div>
-            <figcaption>Printed on BS 5609 vinyl stock. <span class="todo">[Add: caption]</span></figcaption>
+            <figcaption>A finished label printed on BS 5609 certified vinyl stock.</figcaption>
           </figure>
         </div>
       </div>

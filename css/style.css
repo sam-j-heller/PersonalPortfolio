@@ -335,6 +335,8 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 }
 .card:focus-within { outline: 3px solid var(--maroon); outline-offset: 3px; }
 .card .ph, .card img { border: 0; border-bottom: 1px solid var(--border); }
+/* Diagrams are letterboxed on white instead of cropped. */
+.card img.diagram { object-fit: contain; background: #fff; padding: 0.5rem; }
 
 .card-body { padding: 1.25rem 1.25rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
 .card-body h3 { margin-bottom: 0.4rem; }
@@ -506,6 +508,13 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 }
 .gallery figure { margin: 0; }
 .gallery .ph, .gallery img { border-radius: var(--radius); }
+/* Labeled diagrams keep their own ratio so the key is never cropped. */
+.gallery img.diagram {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+}
 .gallery figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
 @media (max-width: 600px) {
