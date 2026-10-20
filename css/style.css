@@ -310,6 +310,25 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
   word-break: break-all;
 }
 
+/* Cover with a banner drawn across it in code (EasySDS Open Source),
+   so one screenshot can serve two projects. Works over a .ph or an <img>. */
+.cover { position: relative; overflow: hidden; }
+.project-hero .cover { border-radius: var(--radius); }
+.cover-banner {
+  position: absolute;
+  left: 0; right: 0; bottom: 12%;
+  padding: 0.55em 1em;
+  background: rgba(134, 31, 65, 0.94);
+  border-top: 3px solid var(--orange);
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.6vw, 1.6rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  pointer-events: none;
+}
+.card .cover-banner { font-size: 1rem; }
+
 /* ---------- Project cards ---------- */
 
 .card-grid {
