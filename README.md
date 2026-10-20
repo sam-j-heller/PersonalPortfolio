@@ -66,7 +66,7 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | EasySDS | Gallery 1: facility sign-in screen (done) | `images/easysds/gallery-1.jpg` | 4:3 |
 | EasySDS | Gallery 2: approval review screen (done) | `images/easysds/gallery-2.jpg` | 4:3 |
 | EasySDS | Gallery 3: admin console dashboard (done, full width) | `images/easysds/gallery-3.jpg` | 16:9 |
-| EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
+| EasySDS | Gallery 4: printed label on the shop floor (done) | `images/easysds/gallery-4.jpg` | 4:3 |
 | Home + EasySDS Open Source | Cover / card: same image as the EasySDS cover; banner added in code (done) | `images/easysds-open-source/hero.jpg` | 16:9 |
 | EasySDS Open Source | Gallery 1: browser-saved library and favorites | `images/easysds-open-source/gallery-1.jpg` | 4:3 |
 | EasySDS Open Source | Gallery 2: Google Drive sync settings | `images/easysds-open-source/gallery-2.jpg` | 4:3 |

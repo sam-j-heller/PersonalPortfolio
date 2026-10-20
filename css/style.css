@@ -548,11 +548,17 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 }
 .gallery figure { margin: 0; }
 .gallery figure.wide { grid-column: 1 / -1; } /* wide screenshots span both columns */
+.gallery figure.solo { /* a lone image on its own row, centered at normal size */
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 0.625rem);
+}
 .gallery .ph, .gallery img { border-radius: var(--radius); }
 .gallery figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
 @media (max-width: 600px) {
   .gallery { grid-template-columns: 1fr; }
+  .gallery figure.solo { width: 100%; }
   .section { padding: 3.25rem 0; }
   .hero { padding: 4rem 0 3.5rem; }
 }
