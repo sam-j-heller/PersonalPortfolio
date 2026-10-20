@@ -62,12 +62,12 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | Chiropter | Gallery 2: folding drive | `images/chiropter/gallery-2.jpg` | 4:3 |
 | Chiropter | Gallery 3: chassis | `images/chiropter/gallery-3.jpg` | 4:3 |
 | Chiropter | Gallery 4: carbon fiber and nylon parts | `images/chiropter/gallery-4.jpg` | 4:3 |
-| Home + EasySDS | Cover / card: label editor with a finished label | `images/easysds/hero.jpg` | 16:9 |
-| EasySDS | Gallery 1: facility sign-in screen | `images/easysds/gallery-1.jpg` | 4:3 |
-| EasySDS | Gallery 2: approval queue with label preview | `images/easysds/gallery-2.jpg` | 4:3 |
+| Home + EasySDS | Cover / card: label editor with a finished label (done) | `images/easysds/hero.jpg` | 16:9 |
+| EasySDS | Gallery 1: facility sign-in screen (done) | `images/easysds/gallery-1.jpg` | 4:3 |
+| EasySDS | Gallery 2: approval review screen (done) | `images/easysds/gallery-2.jpg` | 4:3 |
 | EasySDS | Gallery 3: admin console dashboard | `images/easysds/gallery-3.jpg` | 4:3 |
 | EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
-| Home + EasySDS Open Source | Cover / card: label editor (can be a copy of the EasySDS cover; the banner is added in code) | `images/easysds-open-source/hero.jpg` | 16:9 |
+| Home + EasySDS Open Source | Cover / card: same image as the EasySDS cover; banner added in code (done) | `images/easysds-open-source/hero.jpg` | 16:9 |
 | EasySDS Open Source | Gallery 1: browser-saved library and favorites | `images/easysds-open-source/gallery-1.jpg` | 4:3 |
 | EasySDS Open Source | Gallery 2: Google Drive sync settings | `images/easysds-open-source/gallery-2.jpg` | 4:3 |
 | EasySDS Open Source | Gallery 3: export/import and Save HTML with Library | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
