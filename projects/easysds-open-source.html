@@ -46,7 +46,7 @@
         <p class="lede">A free, no-account version of EasySDS: the same GHS chemical label engine, running entirely in the browser.</p>
         <dl class="facts">
           <div><dt>Role</dt><dd>Developer</dd></div>
-          <div><dt>Timeframe</dt><dd><span class="todo">[Add: timeframe]</span></dd></div>
+          <div><dt>Timeframe</dt><dd>May 2026 to present</dd></div>
           <div><dt>Runs in</dt><dd>Any browser, no account needed</dd></div>
           <div><dt>Tools</dt><dd>HTML, JavaScript, browser localStorage, Google Drive sync</dd></div>
         </dl>
@@ -69,13 +69,19 @@
           <section aria-labelledby="overview">
             <h2 id="overview">Overview</h2>
             <p>EasySDS Open Source is a free version of <a href="easysds.html">EasySDS</a> that anyone can use without an account: open the page and start making labels. It covers the label engine, a local chemical library, and sharing. It leaves out everything that needs a backend: accounts, approvals, the admin console, the blacklist, and history.</p>
-            <p><span class="todo">[Add: why you made an open-source version and who it is for]</span></p>
+            <p>I made it open source so this safety tool is available to anyone, free, with the goal of lowering the chance of injuries in workplaces that handle chemicals.</p>
           </section>
 
           <section aria-labelledby="role">
             <h2 id="role">My Role</h2>
             <p>I adapted the EasySDS label engine into a standalone version that runs from a single <code>index.html</code> file with no server.</p>
-            <p><span class="todo">[Add: what was involved in separating the label engine from the Firebase backend]</span></p>
+            <p>EasySDS is split across <code>index.html</code>, <code>admin.html</code>, and <code>firebase.js</code>, with Firebase handling sign-in and data. Separating the label engine meant removing everything that depended on that backend (accounts, the approval queue, the admin console, the blacklist, and history) and replacing what the label tool still needed with browser-side versions:</p>
+            <ul>
+              <li><strong>Storage:</strong> the chemical library and favorites moved from Firestore to the browser's localStorage, and saving a chemical skips the approval step.</li>
+              <li><strong>Sharing:</strong> with no shared cloud library, sharing became JSON export and import for labels and libraries, plus Save HTML with Library, which writes a copy of the page with the library built in.</li>
+              <li><strong>Multiple devices:</strong> optional Google Drive sync signs in with Google's narrow <code>drive.file</code> permission and merges the local and Drive libraries by product name, so nothing is overwritten.</li>
+              <li><strong>Branding:</strong> the company logo, which came from each facility's record, became a user upload stored in the browser.</li>
+            </ul>
           </section>
 
           <section aria-labelledby="details">
