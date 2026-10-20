@@ -70,7 +70,7 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | Home + EasySDS Open Source | Cover / card: same image as the EasySDS cover; banner added in code (done) | `images/easysds-open-source/hero.jpg` | 16:9 |
 | EasySDS Open Source | Gallery 1: library open, with the community-edition banner (done, full width) | `images/easysds-open-source/gallery-1.jpg` | 16:9 |
 | EasySDS Open Source | Gallery 2: Google Drive sync settings | `images/easysds-open-source/gallery-2.jpg` | 4:3 |
-| EasySDS Open Source | Gallery 3: export/import and Save HTML with Library | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 3: export/import and Save HTML with Library (done) | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
 | EasySDS Open Source | Gallery 4: company logo upload | `images/easysds-open-source/gallery-4.jpg` | 4:3 |
 
 That is 16 images total (1 headshot + 3 heroes + 12 gallery).
