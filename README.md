@@ -62,16 +62,16 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | Chiropter | Gallery 2: folding drive | `images/chiropter/gallery-2.jpg` | 4:3 |
 | Chiropter | Gallery 3: chassis | `images/chiropter/gallery-3.jpg` | 4:3 |
 | Chiropter | Gallery 4: carbon fiber and nylon parts | `images/chiropter/gallery-4.jpg` | 4:3 |
-| Home + EasySDS | Hero / card | `images/easysds/hero.jpg` | 16:9 |
-| EasySDS | Gallery 1: generated label | `images/easysds/gallery-1.jpg` | 4:3 |
-| EasySDS | Gallery 2: approval queue | `images/easysds/gallery-2.jpg` | 4:3 |
-| EasySDS | Gallery 3: admin inventory | `images/easysds/gallery-3.jpg` | 4:3 |
+| Home + EasySDS | Hero / card: approval queue with label preview | `images/easysds/hero.jpg` | 16:9 |
+| EasySDS | Gallery 1: facility sign-in screen | `images/easysds/gallery-1.jpg` | 4:3 |
+| EasySDS | Gallery 2: admin console dashboard | `images/easysds/gallery-2.jpg` | 4:3 |
+| EasySDS | Gallery 3: print blocked for unapproved chemical | `images/easysds/gallery-3.jpg` | 4:3 |
 | EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
-| Home + EasySDS Open Source | Hero / card | `images/easysds-open-source/hero.jpg` | 16:9 |
-| EasySDS Open Source | Gallery 1: label editor | `images/easysds-open-source/gallery-1.jpg` | 4:3 |
-| EasySDS Open Source | Gallery 2: sheet print preview | `images/easysds-open-source/gallery-2.jpg` | 4:3 |
-| EasySDS Open Source | Gallery 3: chemical library | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
-| EasySDS Open Source | Gallery 4: export and import | `images/easysds-open-source/gallery-4.jpg` | 4:3 |
+| Home + EasySDS Open Source | Hero / card: label editor open with no sign-in | `images/easysds-open-source/hero.jpg` | 16:9 |
+| EasySDS Open Source | Gallery 1: browser-saved library and favorites | `images/easysds-open-source/gallery-1.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 2: Google Drive sync settings | `images/easysds-open-source/gallery-2.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 3: export/import and Save HTML with Library | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 4: company logo upload | `images/easysds-open-source/gallery-4.jpg` | 4:3 |
 
 That is 16 images total (1 headshot + 3 heroes + 12 gallery).
 
