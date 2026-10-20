@@ -547,6 +547,7 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
   margin: 0 0 3rem;
 }
 .gallery figure { margin: 0; }
+.gallery figure.wide { grid-column: 1 / -1; } /* wide screenshots span both columns */
 .gallery .ph, .gallery img { border-radius: var(--radius); }
 .gallery figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
