@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EasySDS Open Source: Free GHS Label Maker | Sam Heller</title>
+  <meta name="description" content="EasySDS Open Source is a free, no-account version of EasySDS that makes GHS chemical labels in the browser, with a local chemical library and JSON export and import.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="EasySDS Open Source: Free GHS Label Maker | Sam Heller">
+  <meta property="og:description" content="A free, no-account version of EasySDS: the same label engine, running entirely in the browser.">
+  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/easysds-open-source/hero.jpg">
+  <meta property="og:url" content="https://sam-j-heller.github.io/PersonalPortfolio/projects/easysds-open-source.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html">Sam Heller</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../resume/Sam_Heller_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="container project-head">
+        <a class="back-link" href="../index.html#projects">&larr; All projects</a>
+        <h1>EasySDS Open Source</h1>
+        <p class="lede">A free, no-account version of EasySDS: the same GHS chemical label engine, running entirely in the browser.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Developer</dd></div>
+          <div><dt>Timeframe</dt><dd><span class="todo">[Add: timeframe]</span></dd></div>
+          <div><dt>Runs in</dt><dd>Any browser, no account needed</dd></div>
+          <div><dt>Tools</dt><dd>HTML, JavaScript, browser localStorage, Google Drive sync</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://sam-j-heller.github.io/Easy-SDS-Open-Source/" target="_blank" rel="noopener">Try It Live</a>
+          <a class="btn btn-secondary" href="https://github.com/sam-j-heller/Easy-SDS-Open-Source" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </header>
+
+      <div class="container project-hero">
+        <!-- REPLACE WITH: <img class="ratio-16x9" src="../images/easysds-open-source/hero.jpg" alt="EasySDS Open Source label maker in the browser" width="1920" height="1080"> -->
+        <div class="ph ratio-16x9" role="img" aria-label="Placeholder for EasySDS Open Source hero image">
+          <span>EasySDS Open Source: hero image, 16:9</span>
+          <code>images/easysds-open-source/hero.jpg</code>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="prose">
+          <section aria-labelledby="overview">
+            <h2 id="overview">Overview</h2>
+            <p>EasySDS Open Source is a free version of <a href="easysds.html">EasySDS</a> that anyone can use without an account: open the page and start making labels. It covers the label engine, a local chemical library, and sharing. It leaves out everything that needs a backend: accounts, approvals, the admin console, the blacklist, and history.</p>
+            <p><span class="todo">[Add: why you made an open-source version and who it is for]</span></p>
+          </section>
+
+          <section aria-labelledby="role">
+            <h2 id="role">My Role</h2>
+            <p>I adapted the EasySDS label engine into a standalone version that runs from a single <code>index.html</code> file with no server.</p>
+            <p><span class="todo">[Add: what was involved in separating the label engine from the Firebase backend]</span></p>
+          </section>
+
+          <section aria-labelledby="details">
+            <h2 id="details">Key Details</h2>
+            <ul>
+              <li><strong>Same label engine as EasySDS:</strong> full labels and stickers (3&times;4 and 4&times;5 OL475LP), 4-up sheets and 1-up test prints, on Letter, A4, and SRA3 paper. Includes NFPA and HMIS ratings, automatic Additional PPE, and truncation warnings.</li>
+              <li><strong>Chemical library:</strong> searchable chemical list with a duplicate-name warning, plus favorites.</li>
+              <li><strong>No account:</strong> chemicals save immediately to the browser's localStorage, with optional Google Drive sync using your own OAuth Client ID.</li>
+              <li><strong>Sharing:</strong> export and import labels and libraries as JSON, or save a copy of the page with your library built in.</li>
+              <li><strong>Your branding:</strong> upload a company logo, stored in the browser.</li>
+              <li><strong>One file:</strong> the whole app is a single <code>index.html</code>.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="compare">
+            <h2 id="compare">How It Compares to EasySDS</h2>
+            <div class="table-wrap">
+              <table class="compare">
+                <thead>
+                  <tr><th scope="col">Feature</th><th scope="col">EasySDS</th><th scope="col">Open Source</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Access</th><td>Facility account (sign-in, self-registration, password reset)</td><td>No account, open the page and use it</td></tr>
+                  <tr><th scope="row">Storage</th><td>Firebase cloud, organized by facility</td><td>Browser localStorage, optional Google Drive sync</td></tr>
+                  <tr><th scope="row">Saving a chemical</th><td>Approval queue; only admins overwrite directly</td><td>Saves immediately</td></tr>
+                  <tr><th scope="row">Printing</th><td>Blocked for chemicals not in the approved library</td><td>Always allowed</td></tr>
+                  <tr><th scope="row">Favorites</th><td>Shared per facility</td><td>Per browser</td></tr>
+                  <tr><th scope="row">Company logo</th><td>From the facility record</td><td>Uploaded by the user</td></tr>
+                  <tr><th scope="row">Admin console</th><td>Dashboard, facilities, workers, approvals, company-wide chemicals, blacklist, history</td><td>None</td></tr>
+                  <tr><th scope="row">Sharing</th><td>Library lives in the cloud</td><td>JSON export/import, Save HTML with Library</td></tr>
+                  <tr><th scope="row">Files</th><td>index.html, admin.html, firebase.js</td><td>A single index.html</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <h2 class="visually-hidden">Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds-open-source/gallery-1.jpg" alt="Label editor in EasySDS Open Source" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS Open Source gallery image 1">
+              <span>EasySDS Open Source: gallery 1, label editor, 4:3</span>
+              <code>images/easysds-open-source/gallery-1.jpg</code>
+            </div>
+            <figcaption>Label editor. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds-open-source/gallery-2.jpg" alt="4-up label sheet print preview" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS Open Source gallery image 2">
+              <span>EasySDS Open Source: gallery 2, sheet print preview, 4:3</span>
+              <code>images/easysds-open-source/gallery-2.jpg</code>
+            </div>
+            <figcaption>Sheet print preview. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds-open-source/gallery-3.jpg" alt="Chemical library with search and favorites" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS Open Source gallery image 3">
+              <span>EasySDS Open Source: gallery 3, chemical library, 4:3</span>
+              <code>images/easysds-open-source/gallery-3.jpg</code>
+            </div>
+            <figcaption>Chemical library. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+          <figure>
+            <!-- REPLACE WITH: <img class="ratio-4x3" src="../images/easysds-open-source/gallery-4.jpg" alt="Library export and import options" loading="lazy" width="1600" height="1200"> -->
+            <div class="ph ratio-4x3" role="img" aria-label="Placeholder for EasySDS Open Source gallery image 4">
+              <span>EasySDS Open Source: gallery 4, export and import, 4:3</span>
+              <code>images/easysds-open-source/gallery-4.jpg</code>
+            </div>
+            <figcaption>Export and import. <span class="todo">[Add: caption]</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container project-foot">
+        <a class="back-link" href="../index.html#projects">&larr; Back to Projects</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sam Heller</p>
+    </div>
+  </footer>
+</body>
+</html>

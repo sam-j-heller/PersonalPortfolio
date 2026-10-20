@@ -69,6 +69,7 @@
             <h2 id="overview">Overview</h2>
             <p>EasySDS started during my Summer 2026 Mechanical Engineering internship at Rhenus Automotive in Salem, VA, as an automated chemical labeling compliance tool that enforces required GHS/OSHA fields. It cut per-label cost to under $1 and processing time by 90%.</p>
             <p>It is now a Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels, with facility-gated login, an approval queue, and multiple print formats.</p>
+            <p>There is also a free, no-account version: <a href="easysds-open-source.html">EasySDS Open Source</a> keeps the same label engine and leaves out everything that needs a backend.</p>
           </section>
 
           <section aria-labelledby="role">
@@ -80,8 +81,12 @@
             <h2 id="details">Key Details</h2>
             <ul>
               <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields.</li>
-              <li><strong>Access and workflow:</strong> facility-gated login, an approval queue, and multiple print formats.</li>
-              <li><strong>Data model:</strong> Firestore with admin tooling for per-facility chemical inventories.</li>
+              <li><strong>Label engine:</strong> full labels and stickers (3&times;4 and 4&times;5 OL475LP), 4-up sheets and 1-up test prints, on Letter, A4, and SRA3 paper. Includes NFPA and HMIS ratings, automatic Additional PPE, and truncation warnings.</li>
+              <li><strong>Chemical library:</strong> searchable chemical list with a duplicate-name warning, and favorites shared across each facility.</li>
+              <li><strong>Accounts:</strong> facility accounts with sign-in, self-registration, and password reset. Each facility's company logo comes from its facility record.</li>
+              <li><strong>Approval workflow:</strong> new or edited chemicals go through an approval queue, and only admins can overwrite directly. Printing is blocked for chemicals not in the approved library, and admins can open a label preview from the review screen.</li>
+              <li><strong>Admin console:</strong> dashboard, facilities, workers, approvals, company-wide chemicals, a blacklist that blocks saving restricted chemicals, and history. Admins can switch between facilities.</li>
+              <li><strong>Data model:</strong> Firestore with admin tooling for per-facility chemical inventories, plus invite emails and client error and event logging.</li>
               <li><strong>Print validation:</strong> output validated on BS 5609 certified vinyl label stock with a color laser print workflow, documented as a standard work instruction.</li>
               <li><strong>Impact:</strong> per-label cost under $1 and a 90% reduction in processing time.</li>
             </ul>

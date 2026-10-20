@@ -67,15 +67,20 @@ Each project's `hero.jpg` is used twice: as the 16:9 hero on its project page an
 | EasySDS | Gallery 2: approval queue | `images/easysds/gallery-2.jpg` | 4:3 |
 | EasySDS | Gallery 3: admin inventory | `images/easysds/gallery-3.jpg` | 4:3 |
 | EasySDS | Gallery 4: printed label on vinyl stock | `images/easysds/gallery-4.jpg` | 4:3 |
+| Home + EasySDS Open Source | Hero / card | `images/easysds-open-source/hero.jpg` | 16:9 |
+| EasySDS Open Source | Gallery 1: label editor | `images/easysds-open-source/gallery-1.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 2: sheet print preview | `images/easysds-open-source/gallery-2.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 3: chemical library | `images/easysds-open-source/gallery-3.jpg` | 4:3 |
+| EasySDS Open Source | Gallery 4: export and import | `images/easysds-open-source/gallery-4.jpg` | 4:3 |
 
-That is 11 images total (1 headshot + 2 heroes + 8 gallery).
+That is 16 images total (1 headshot + 3 heroes + 12 gallery).
 
 ### Other files and text
 
 - **Resume:** `resume/Sam_Heller_Resume.pdf` (the nav link and the Download Resume button point here).
 - **About bio** in `index.html`: marked `<!-- DRAFT: Sam to edit -->`.
 - **Bracketed notes** like `[Add: test results]` on the project pages. They show highlighted in orange so they are easy to spot. Search the HTML for `[Add:` to find them all, then delete the `<span class="todo">...</span>` wrapper along with the text once filled in.
-- **Footer year** is hard-coded as 2026 on every page. Update it in all three HTML files when it changes.
+- **Footer year** is hard-coded as 2026 on every page. Update it in all four HTML files when it changes.
 
 ### Parked projects (Kayak Paddle, Glider, DockBloxx)
 
@@ -88,7 +93,7 @@ These pages are drafted but not published. They live outside the repo in `C:\Use
 
 ### EasySDS screenshots
 
-Before adding EasySDS screenshots, make sure they don't show any internal facility, inventory, or chemical data from Rhenus Automotive. Use demo data.
+Before adding EasySDS screenshots, make sure they don't show any internal facility, inventory, or chemical data from Rhenus Automotive. Use demo data. The open-source version can be screenshotted straight from its public demo, https://sam-j-heller.github.io/Easy-SDS-Open-Source/.
 
 ## Adding a new project
 
