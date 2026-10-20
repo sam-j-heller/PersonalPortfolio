@@ -8,7 +8,7 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="EasySDS: Chemical Label Generator | Sam Heller">
   <meta property="og:description" content="Firebase-backed web app that generates OSHA HazCom 2012 and GHS compliant chemical labels.">
-  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/easysds/hero.jpg">
+  <meta property="og:image" content="https://sam-j-heller.github.io/PersonalPortfolio/images/easysds/full-label.png">
   <meta property="og:url" content="https://sam-j-heller.github.io/PersonalPortfolio/projects/easysds.html">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +48,7 @@
           <div><dt>Role</dt><dd>Architect and developer</dd></div>
           <div><dt>Timeframe</dt><dd>May 2026 to present</dd></div>
           <div><dt>Where</dt><dd>Started at Rhenus Automotive, Salem, VA</dd></div>
-          <div><dt>Tools</dt><dd>Firebase, Firestore, Claude Code</dd></div>
+          <div><dt>Tools</dt><dd>JavaScript, HTML/CSS, Firebase Auth, Firestore, GitHub Pages, Claude Code</dd></div>
         </dl>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://github.com/sam-j-heller/SDSLabelGenerator" target="_blank" rel="noopener">View on GitHub</a>
@@ -56,7 +56,7 @@
       </header>
 
       <div class="container project-hero">
-        <img class="ratio-16x9" src="../images/easysds/hero.jpg" alt="EasySDS label editor with a finished GHS label for ElastiSeal BP-300 Black, showing the NFPA 704 diamond, GHS pictograms, signal word, and HMIS ratings" width="2000" height="1092">
+        <img class="screenshot" src="../images/easysds/full-label.png" alt="EasySDS label editor with fields for product, signal word, hazard information, first aid, and GHS pictograms, next to a live preview of a full letter-size label with NFPA 704, GHS pictogram, signal word, and HMIS blocks" width="1476" height="959">
       </div>
 
       <div class="container">
@@ -71,18 +71,18 @@
           <section aria-labelledby="role">
             <h2 id="role">My Role</h2>
             <p>I architected the Firestore data model and admin tooling for per-facility chemical inventories. I implemented it with Claude Code and reviewed the generated code against GHS field requirements.</p>
+            <p>The app is two pages: a label tool for workers and an admin console for engineering managers. Both run in the browser and are hosted on GitHub Pages, with Firebase handling sign-in and data.</p>
           </section>
 
           <section aria-labelledby="details">
             <h2 id="details">Key Details</h2>
             <ul>
-              <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields.</li>
-              <li><strong>Label engine:</strong> full labels and stickers (3&times;4 and 4&times;5 OL475LP), 4-up sheets and 1-up test prints, on Letter, A4, and SRA3 paper. Includes NFPA and HMIS ratings, automatic Additional PPE, and truncation warnings.</li>
-              <li><strong>Chemical library:</strong> searchable chemical list with a duplicate-name warning, and favorites shared across each facility.</li>
-              <li><strong>Accounts:</strong> facility accounts with sign-in, self-registration, and password reset. Each facility's company logo comes from its facility record.</li>
-              <li><strong>Approval workflow:</strong> new or edited chemicals go through an approval queue, and only admins can overwrite directly. Printing is blocked for chemicals not in the approved library, and admins can open a label preview from the review screen.</li>
-              <li><strong>Admin console:</strong> dashboard, facilities, workers, approvals, company-wide chemicals, a blacklist that blocks saving restricted chemicals, and history. Admins can switch between facilities.</li>
-              <li><strong>Data model:</strong> Firestore with admin tooling for per-facility chemical inventories, plus invite emails and client error and event logging.</li>
+              <li><strong>Compliance:</strong> generates labels to OSHA HazCom 2012 and GHS, enforcing the required fields: product identifier, signal word, GHS pictograms, hazard and precautionary statements, first aid, and supplier contact. Labels can also carry NFPA 704 and HMIS ratings.</li>
+              <li><strong>Live preview and print formats:</strong> the label updates as you type and prints to 3&times;4 in, 4&times;5 in, Letter, A4, SRA3, and 4-up sheet layouts.</li>
+              <li><strong>Label safeguards:</strong> automatic Additional PPE, truncation warnings, and a duplicate-name warning in the searchable chemical list. Favorites are shared across each facility.</li>
+              <li><strong>Access and workflow:</strong> facility-gated login with worker accounts, self-registration, and password reset. New chemicals go into an approval queue, and admins approve or reject them with an optional reason sent to the submitter. Admins can open a label preview from the review screen, and printing is blocked for chemicals not in the approved library.</li>
+              <li><strong>Data model:</strong> Firestore with a chemical library per facility, company-wide chemicals, a chemical blacklist checked on entry, and an activity log of every approval, rejection, and change, plus client error and event logging.</li>
+              <li><strong>Admin console:</strong> manage facilities, invite and deactivate workers, bulk-load chemicals and blacklist entries from CSV, transfer chemicals between facilities, upload facility logos, and switch between facilities.</li>
               <li><strong>Print validation:</strong> output validated on BS 5609 certified vinyl label stock with a color laser print workflow, documented as a standard work instruction.</li>
               <li><strong>Impact:</strong> per-label cost under $1 and a 90% reduction in processing time.</li>
             </ul>
@@ -108,6 +108,11 @@
             <figcaption>In use on the shop floor. Output was validated on BS 5609 certified vinyl label stock with a color laser print workflow.</figcaption>
           </figure>
         </div>
+
+        <figure class="figure-wide">
+          <img class="screenshot" src="../images/easysds/sticker-sheet.png" alt="EasySDS in sticker mode with a 3 by 4 inch, 4-up sheet layout, showing four identical R-22 labels with GHS pictogram, NFPA 704 diamond, signal word, hazard statement, and HMIS ratings" loading="lazy" width="1477" height="958">
+          <figcaption>Sticker mode: a chemical pulled from the saved library, printed four to a sheet at 3&times;4 in.</figcaption>
+        </figure>
       </div>
 
       <div class="container project-foot">

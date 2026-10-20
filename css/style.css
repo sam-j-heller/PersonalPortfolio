@@ -502,6 +502,17 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
 
 .project-hero .ph, .project-hero img { border-radius: var(--radius); }
 
+/* Screenshots keep their own ratio and get a frame so white UI edges do not
+   blend into the page. */
+img.screenshot {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.figure-wide { margin: 0 0 3rem; }
+.figure-wide figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+
 .prose { max-width: 72ch; padding: 3rem 0 1rem; }
 .prose section { margin-bottom: 2.5rem; scroll-margin-top: var(--header-h); }
 .prose ul { padding-left: 1.25rem; margin: 0 0 1em; }
@@ -554,6 +565,13 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
   width: calc(50% - 0.625rem);
 }
 .gallery .ph, .gallery img { border-radius: var(--radius); }
+/* Labeled diagrams keep their own ratio so the key is never cropped. */
+.gallery img.diagram {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+}
 .gallery figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
 @media (max-width: 600px) {
