@@ -314,6 +314,28 @@ img.ratio-16x9, img.ratio-3x2, img.ratio-4x3, img.ratio-4x5 {
    so one screenshot can serve two projects. Works over a .ph or an <img>. */
 .cover { position: relative; overflow: hidden; }
 .project-hero .cover { border-radius: var(--radius); }
+/* Project hero as a video (DockBloxx): poster frame until played. */
+.hero-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.project-hero .figure-wide { margin: 0; }
+
+/* "All my own work" callout, used where company products could be mistaken
+   for company-made renders. */
+.credit-note {
+  max-width: 72ch;
+  margin: 2rem 0 0;
+  padding: 0.85rem 1.1rem;
+  background: var(--orange-tint);
+  border-left: 3px solid var(--maroon);
+  border-radius: var(--radius);
+  font-size: 0.98rem;
+}
 .cover-banner {
   position: absolute;
   left: 0; right: 0; bottom: 12%;

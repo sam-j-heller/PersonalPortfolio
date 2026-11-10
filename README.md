@@ -81,14 +81,18 @@ Diagrams use `class="diagram"` and screenshots use `class="screenshot"`, so they
 - **Bracketed notes** like `[Add: test results]` on the project pages. They show highlighted in orange so they are easy to spot. Search the HTML for `[Add:` to find them all, then delete the `<span class="todo">...</span>` wrapper along with the text once filled in.
 - **Footer year** is hard-coded as 2026 on every page. Update it in all four HTML files when it changes.
 
-### Parked projects (Kayak Paddle, Glider, DockBloxx)
+### Parked projects (Kayak Paddle, Glider)
 
-These pages are drafted but not published. They live outside the repo in `C:\Users\atlan\portfolio-parked\`, each with its placeholders and `[Add: ...]` notes. To bring one back:
+These pages are drafted but not published. The old `portfolio-parked` folder no longer exists; the drafts live in the repo history at commit `89018f8`. To bring one back:
 
-1. Move `portfolio-parked/projects/<name>.html` into `projects/`, and `portfolio-parked/images/<name>/` into `images/`.
-2. Add its card back to the `#projects` grid in `index.html` (see "Adding a new project" below). The original card text: Kayak Paddle, "A paddle that passively filters microplastics during a normal stroke, taken from concept to functional prototype."; Glider, "A flying wing designed in Fusion 360, Wing Helper, and Ansys, built from balsa and carbon fiber, and flight tested."; DockBloxx, "Modeled and animated a catalog of 20+ dock accessories and designed a new modular product from concept to prototype."
+1. Restore the page with `git show 89018f8:projects/<name>.html > projects/<name>.html`, and create `images/<name>/`.
+2. Add its card back to the `#projects` grid in `index.html` (see "Adding a new project" below). The original card text: Kayak Paddle, "A paddle that passively filters microplastics during a normal stroke, taken from concept to functional prototype."; Glider, "A flying wing designed in Fusion 360, Wing Helper, and Ansys, built from balsa and carbon fiber, and flight tested."
 
-**DockBloxx: public work only.** Only put publicly released DockBloxx work on its page: products and renders/animations that already appear on the DockBloxx website. Nothing unreleased, internal, or under NDA.
+### DockBloxx
+
+Published at `projects/dockbloxx.html`. The hero is the Wake Surf Bloxx assembly animation (`images/dockbloxx/surf-bloxx-animation.mp4`, converted from Sam's Rev.3 AVI, with `hero.jpg` as its poster frame); the gallery is stills from the same animation. Sam modeled and animated every 3D model and animation on the site, and the site says so (Projects heading and the DockBloxx page).
+
+**Public work only.** Only put publicly released DockBloxx work on its page: products and renders/animations that already appear on the DockBloxx website. Nothing unreleased, internal, or under NDA.
 
 ### EasySDS screenshots
 
